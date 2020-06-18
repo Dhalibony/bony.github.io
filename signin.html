@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in</title>	
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+	<ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <!-- dropdown start -->
+    <li class="dropdown">
+      <a class="dropbtn" href="#dropdown">Dropdown </a>
+      <div class="drop-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      </div>
+    </li>
+    <!-- dropdown end -->
+  <li class="active" id="signin"><a href="signin.html">Sign in</a></li>
+  <li><a href="products.html"> Product </a></li>
+  <li><a href="gallery.html"> Gallery </a></li>
+</ul>
+<!-- menu end -->
+
+
+	<form action="action_page.php" id="s-i-form">
+		<label for="FN" id="f-n-l">  <b>First Name</b>  </label>
+		<label for="LN" style="font-size: 20px;color: #00B5F8;margin-left: 81px">  <b>Last Name</b>  </label>
+		<br>
+		<input  style="color: red;height: 30px" type="text" name="FN" placeholder="Exm. Jhon">
+		<input  style="color: red;height: 30px" type="text" name="LN" placeholder="Exm. Doe">
+		<br>
+		<label for="BDay" style="font-size: 20px;color: #00B5F8"> <b>Date of birth</b> </label>
+		<br>
+		<input style="color: red;height: 30px;font-size: 15px" type="Date" name="BDay">
+		<br>
+		<label for="Gender" style="font-size: 20px;color: #00B5F8"> <b>Gender</b> </label>
+		<br>
+		<input type="radio" id="MG" name="Gender">
+		<label for="MG" style="color: red">Male</label>
+		<input type="radio" id="FG" name="Gender">
+		<label for="FG" style="color: red">Female</label>
+		<input type="radio" id="OG" name="Gender">
+		<label for="OG" style="color: red">Other</label>
+		
+		<br>
+
+		<label for="Mnumber,email" style="font-size: 20px;color: #00B5F8"> <b>Phone number or email address</b> </label>	
+		<br>
+		<input style="color: red;height: 30px" type="Mnumber,email" name="Mnumber,email">
+		<br>
+		<p style="width: 380px;font-size: 12.5px">By clicking Submit, you agree to our <a style="color: #00B5F8">Terms, Data Policy</a> and <a style="color: #00B5F8">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+		<br>
+		<br>
+		<input style="color: red;width: 100px;height: 30px" type="submit" name="get">
+
+
+
+
+
+
+
+	</form>
+
+</body>
+</html>

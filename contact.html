@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- menu start-->
+
+<ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <!-- dropdown start -->
+    <li class="dropdown">
+      <a class="dropbtn" href="#dropdown">Dropdown </a>
+      <div class="drop-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      </div>
+    </li>
+    <!-- dropdown end -->
+  <li id="signin"><a href="signin.html">Sign in</a></li>
+  <li><a href="products.html"> Product </a></li>
+  <li><a href="gallery.html"> Gallery </a></li>
+</ul>
+<!-- menu end -->
+
+<h3 style="padding-top: 0px">Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
